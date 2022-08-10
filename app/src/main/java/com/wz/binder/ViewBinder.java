@@ -32,7 +32,6 @@ public class ViewBinder {
                         if(fieldsId != null){
                             for (Field fieldId : fieldsId){
                                 if(fieldId.getName().equals(idFieldName)){
-                                    Log.d("ViewBinder",fieldId.getName());
                                     Object fieldIdObject = fieldId.get(null);
 
                                     Method findViewByIdMethod = contextClass.getMethod("findViewById",int.class);
