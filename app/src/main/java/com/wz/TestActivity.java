@@ -18,6 +18,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
+        /* 自动绑定View */
         ViewBinder.bind(this,R.id.class);
 
         /* 事件初始化 */
@@ -25,6 +26,6 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void initEvent(){
-        textView.setText("test...");
+        textView.setText("This is TestActivity TextView.");
     }
 }
